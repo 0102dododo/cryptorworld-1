@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>문자 보내기</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // 페이지 로드 시 바로 SMS 링크로 리다이렉트 (이동)
+        window.onload = function() {
+            window.location.href = "sms:01082567380?body=%5B%ED%81%AC%EB%A6%BD%ED%86%A0%EC%9B%94%EB%93%9C%5D%2F%20%EB%82%B4%EC%9A%A9%20%EC%83%81%EB%8B%B4%20%EC%9B%90%ED%95%98%EC%8B%9C%EB%A9%B4%20%EC%97%B0%EB%9D%BD%EC%A3%BC%EC%84%B8%EC%9A%94.";
+        };
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            color: #0056b3;
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .sms-link-text {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #e67e22;
+            word-break: break-all; /* 긴 텍스트가 넘치지 않도록 */
+        }
+        .fallback-instructions {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dashed #ccc;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>문자 앱 열기 중...</h1>
+        <p>잠시 후 문자 앱이 자동으로 열립니다. 만약 열리지 않는다면, 아래 전화번호와 내용을 복사하여 직접 문자를 보내주세요.</p>
+        <p><strong>전화번호:</strong> <span class="sms-link-text">010-8256-7380</span></p>
+        <p><strong>문자 내용:</strong> <span class="sms-link-text">[크립토월드]/ 내용 상담 원하시면 연락주세요.</span></p>
+        <div class="fallback-instructions">
+            <p>※ 이 페이지는 모바일 기기에서 가장 원활하게 작동합니다.</p>
+        </div>
+    </div>
+</body>
+</html>
